@@ -1,0 +1,171 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+ul,
+li,
+button,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center text horizontally */
+    justify-content: center;
+    /* Center text vertically */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    /* Increased spacing between headline and button */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+}
+
+button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.add-remove-buttons {
+    display: flex;
+    margin-bottom: 10px;
+    /* Added spacing between button rows */
+}
+
+.add-remove-buttons button {
+    flex: 1;
+}
+
+#add-currentTab-button,
+#add-textfield-button {
+    background-color: rgba(76, 175, 80, 0.5);
+    color: white;
+}
+
+#remove-currentTab-button,
+#remove-textfield-button {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+}
+
+button#copy-button {
+    background-color: rgba(33, 150, 243, 0.5);
+    color: white;
+    width: 100%;
+    /* Make the copy button fill out the page */
+}
+
+button:hover {
+    background-color: rgba(85, 85, 85, 0.5);
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+    width: 100%;
+    /* Make the list fill the full page width */
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+#copy-button {
+    background-color: rgba(76, 175, 80, 0.5);
+    color: white;
+    border: none;
+}
+
+
+
+#url-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #555555;
+    padding: 10px;
+    background-color: rgba(51, 51, 51, 0.8);
+}
+
+#url-list li {
+    word-break: break-all;
+}
+
+.copy-button-wrapper {
+    width: 100%;
+    /* Make the wrapper span the full page width */
+    margin-bottom: 20px;
+    /* Add space between the headline and button */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    /* Increase the bottom value */
+    right: 10px;
+    font-size: 12px;
+    color: #888888;
+    z-index: 1;
+}
+
+button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Add transition effect */
+}
+
+button:focus {
+    outline: none;
+    /* Remove the default focus outline */
+}
+
+button:active {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Change button color when clicked */
+}
+
+button:hover {
+    filter: brightness(50%);
+    /* Make the button slightly darker */
+}

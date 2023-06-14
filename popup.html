@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Hider</title>
+    <script src="popup.js"></script>
+    <script src="clipboard.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    
+    <h1>URL Hider</h1>
+    <div class="add-remove-buttons">
+      <button id="add-currentTab-button">Add URL from this tab to list</button>
+      <button id="remove-currentTab-button">Remove URL from this tab from list</button>
+    </div>
+
+    <input type="text" id="url-input" placeholder="Enter URL to Hide" />
+    
+    <div class="add-remove-buttons">
+      <button id="add-textfield-button">Add URL from textfield to list</button>
+      <button id="remove-textfield-button">Remove URL from textfield from list</button>
+    </div>
+
+    
+    
+    <ul id="url-list"></ul>
+
+    <h2>Copy Original URL:</h2>
+    <button id="copy-button">Copy</button>
+    <div class="footer">Developed by Jumpystyle</div>
+
+  </body>
+</html>
